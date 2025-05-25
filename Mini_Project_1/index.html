@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <div>
+        <header id="header">
+            <h1>My Daily Planner</h1>
+
+        </header>
+        <section id="content">
+            <!-- search section -->
+            <div id="searchOption">
+                <div id="searchBar">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <input type="text"
+                    id="searchInput"
+                     placeholder="Search note...">
+                </div>
+                <div  id="filterOption">
+                    <p>Category : </p>
+                    <select name="" id="categoryFilter">
+                        <option value="">All</option>
+                        <option value="personal">Personal</option>
+                        <option value="work">Work</option>
+                        <option value="study">Study</option>
+                    </select>
+                </div>
+
+            </div>
+
+            <!-- Task List-->
+             <h2 id="taskheader">Task List</h2>
+             <div class="TaskList">
+                <div >
+                   <p id="badge">work</p>
+                   <input type="checkbox" name="" id=""> 
+                   <h5>COmpleye YZaks</h5>
+                   <button>&#128465; Delete</button>
+
+                </div>
+                                   <hr>
+
+                                <div >
+                   <p id="badge">personal</p>
+                   <input type="checkbox" name="" id=""> 
+                   <h5>COmpleye YZaks sdfigjiwsdipjv </h5>
+                   <button>&#128465; Delete</button>
+                </div>
+             </div>
+        </section>
+
+        <div>
+            <button onclick="openModal()" id="modalBtn">+</button>
+
+<!-- Modal Structure -->
+<div class="modal-overlay" id="modalOverlay">
+  <div class="modal">
+    <span class="close-btn" onclick="closeModal()">&times;</span>
+    <h3>Add Task</h3>
+    <input type="text" id="textInput" placeholder="Enter the task ...">
+    <select id="categorySelect">
+      <option value="">Select Category</option>
+      <option value="work">Work</option>
+      <option value="personal">Personal</option>
+      <option value="study">Study</option>
+    </select>
+    <button onclick="submitForm()">Submit</button>
+  </div>
+</div>
+        </div>
+    </div>
+</body>
+</html>
+
+<script src="index.js"></script>

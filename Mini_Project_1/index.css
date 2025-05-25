@@ -1,0 +1,243 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#header {
+text-align: center;
+  font-weight: 600;
+color: white;
+padding:8px;
+background-color: blueviolet;
+}
+
+#content{
+
+    width: 700px;
+    margin: auto;
+    margin-top: 40px;
+
+
+}
+
+#searchOption{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+input{
+   outline: none;
+    border: none;
+
+}
+
+input:placeholder-shown{
+    font-size: 16px;
+
+}
+
+#searchBar{
+    width: 350px;
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items: center;
+    padding-left: 5px;
+
+    border-radius: 5px;
+gap: 10px;
+box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+
+#filterOption{
+    display:flex;
+    justify-content: center;
+    background-color: blueviolet;
+border-radius: 5px;
+    margin: auto;
+}
+
+#filterOption p{
+    color: white;
+    font-size: 18px;
+    padding: 8px;
+
+    font-weight: 500;
+}
+select{
+    outline: none;
+    border:none;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+    width: 100px;
+    height: 25px;
+    margin-left: 5px;
+    margin-top: 5px;
+    margin-right: 5px;
+    border-radius: 5px;
+    font-size: 14px;
+        background-color: blueviolet;
+        color: aliceblue;
+        border:1px solid white
+
+
+}
+
+option{
+    outline: none;
+    border: none;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+#badge {
+      display: inline-block;
+      width:50px;
+      height: 20px;
+     padding-top: 4px;
+     padding-left: 5px;
+     padding-right: 5px;
+     
+     text-align: center;
+      background-color: #007bff;
+      color: white;
+      border-radius: 20px;
+      font-size: 12px;
+      font-weight: bold;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    }
+
+
+    #taskheader{
+        margin-top:30px;
+        margin-bottom: 20px;
+    }
+
+.TaskList{
+
+    display: flex;
+    flex-direction: column;
+width: 700px;
+margin: auto;
+box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+padding:20px;
+border-radius: 5px;
+
+}
+
+.TaskList div{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content:start;
+    align-items: center;
+    gap: 30px;
+    margin: auto;
+    padding-left: 10px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+
+}
+
+.TaskList input[type="checkbox"]{
+        appearance: none;
+
+    height: 25px;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    cursor: pointer;
+    position: relative;
+    width: 25px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}
+
+.TaskList input[type="checkbox"]:checked{
+    background-color:green;
+         border-color: green;
+
+}
+    .TaskList input[type="checkbox"]:checked::after {
+      content: '✔';
+      color: white;
+      font-size: 14px;
+      position: absolute;
+      top: 0px;
+      left: 4px;
+    }
+
+    .TaskList h5{
+        padding-top: 2px;
+        font-size: 18px;
+        font-weight: 600;
+    }
+
+      .TaskList input[type="checkbox"]:checked + h5 {
+    text-decoration: line-through;
+    color: gray;
+  }
+  .TaskList button{
+    background-color: rgb(225, 66, 66);
+    position: absolute;
+    color: wheat;
+    width: 80px;
+    height:30px;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+    margin-left:  30%;
+    
+    
+    
+  }
+    #modalBtn{
+      position: fixed;
+      bottom: 30px;
+      right: 30px;
+      width: 60px;
+      height: 60px;
+      background-color: #007bff;
+      color: white;
+      border: none;
+      border-radius: 50%;
+      font-size: 36px;
+      cursor: pointer;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal Background */
+    .modal-overlay {
+      position: fixed;
+      top: 0; left: 0;
+      width: 100%; height: 100%;
+      background: rgba(0, 0, 0, 0.5);
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+
+    /* Modal Box */
+    .modal {
+      background: white;
+      padding: 20px;
+      border-radius: 10px;
+      width: 300px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+    }
+
+    .modal input, .modal select, .modal button {
+      width: 100%;
+      padding: 4px;
+      margin-top: 10px;
+    }
+
+    .close-btn {
+      float: right;
+      cursor: pointer;
+      font-size: 18px;
+      font-weight: bold;
+    }
