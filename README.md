@@ -13,7 +13,8 @@ A simple web-based task manager that allows users to create, view, filter, and d
 
 ---
 
-⚙️ Functionalities
+## ⚙️ Functionalities
+
 ✅ Add Task: Use the "+" button to open a modal and add a task with a category.
 
 🔍 Live Search: Instantly filter tasks based on the text entered in the search bar.
@@ -28,7 +29,8 @@ A simple web-based task manager that allows users to create, view, filter, and d
 
 🔄 Persistent Storage: Tasks are not lost on page reload or browser close.
 
-📦 Technologies Used
+## 📦 Technologies Used
+
 HTML
 
 CSS
